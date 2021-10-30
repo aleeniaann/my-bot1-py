@@ -23,9 +23,9 @@ async def on_message(message):
   if message.content.startswith('$hello'):
     await message.channel.send('Hello! How you doin?')
 
-    if message.content.startswith('$inspire'):
-      quote = get_quote()
-      await message.channel.send(quote)
+  if message.content.startswith('$inspire'):
+    quote = get_quote()
+    await message.channel.send(quote)
 
 #client.run(os.getenv('TOKEN'))
 client.run(os.environ['TOKEN'])
