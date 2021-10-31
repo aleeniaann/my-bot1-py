@@ -51,6 +51,7 @@ async def on_message(message):
 
   options = starter_encouragements
   if "encouragements" in db.keys():
+    # options = options + db["encouragements"].value
     options = options + db["encouragements"]
 
   if any(word in msg for word in sad_words):  #msg stands for message.content
