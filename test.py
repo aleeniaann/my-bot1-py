@@ -76,4 +76,6 @@ async def on_message(message):
 #client.run(os.getenv('TOKEN'))
 client.run(os.environ['TOKEN'])
 
-#48:21
+#error from 48:21
+
+#watched upto 50:33
